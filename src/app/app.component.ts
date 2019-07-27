@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstApp';
+
+  message(title) {
+
+    console.log(title);
+  };
+
+  ngOnInit() {
+    this.message(this.title);
+  }
 }
